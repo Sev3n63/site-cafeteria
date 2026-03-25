@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+
+}
+
+body{
+    background-color: black;
+    color: #eee;
+}
+
+header{
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+}
+
+header a{
+    color: #eee;
+    margin-right: 40px;
+    font-weight: 300;
+    
+}
+
+header a:hover{
+    border-radius: 8px;
+    padding: 4px;
+    background-color: #eee;
+    color: black;
+    transition: 0.7s;
+    text-decoration: underline black;
+    
+
+    
+
+}
+
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    margin-top: -50px;
+    overflow: hidden; /* não deslizar a tela */
+    
+}
+
+.container .list .list-item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.container .list .list-item img {
+    object-fit: cover; /* dimensionamento da imagem */
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+
+.container .list .list-item .content {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    padding-right: 30%;
+    width: 80%;
+    color: #eee;
+    text-shadow: 0 5px 10px #0004;
+}
+
+.container .list .list-item .title {
+    font-size: 3em ;
+    line-height: 1.3em;
+    font-weight: 300;
+
+}
+
+
+.container .list .list-item .description {
+    font-size: 1.5em;
+
+
+}
+
+.container .list .list-item .buttons {
+
+    display: grid;
+    grid-template-columns: repeat(2,130px); /* repetir um mesmo quadro */
+    grid-template-rows: 50px;  /* altura botoes */
+    margin-top: 25px;
+    gap: 5px; /* distanciamento dos botões */
+}
+.container .list .list-item .buttons button {
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+
+
+}
+
+.container .list .list-item .buttons button:hover{
+    background-color: transparent;
+    border: 1px solid #eee;
+    color: #eee;
+    transition: 0.4s;
+}
+
+.container .list .list-item .buttons button:nth-child(2){ /* maneira intuitiva de decorar os botôes*/  
+    background-color: transparent;
+    color: #eee;
+    border: 1px solid #eee;
+
+}
+
+.container .list .list-item .buttons button:nth-child(2):hover {
+    background-color: #eee;
+    color: #000;
+    
+
+}
+
+
+.container .thumb {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    display: flex;
+    gap: 20px;
+}
+
+.container .thumb .thumb-item {
+    width: 165px;
+    height: 225px;
+    position: relative;
+}
+
+.container .thumb .thumb-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    filter: brightness(70%);
+
+
+}
+
+
