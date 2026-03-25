@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    @import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    flex: 20%;
+    margin-left: 10%;
+    text-align: left;
+}
+.logo h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    color: #180f4a;
+    
+}
+.menu{
+    flex: 50%;
+    text-align: right;
+    padding: 20px;
+   
+}
+.menu a{
+    color: #180f4a;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 16px;
+    
+}
+
+.menu a:hover{
+    color: #ff2978;
+    transition: 0.3s;
+
+}
+#botao{
+    background: #180f4a;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    margin-right: 10%;
+    margin-left: 5%;
+
+}
+
+#botao:hover{
+    text-decoration: none;
+    background: #ff2978;
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    height: 640px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.headline{
+    flex: 40%;
+    margin-left: 10%;
+    /* border: 1px solid black; */
+}
+
+.headline h2{
+font-weight: 700px;
+color: #180f4a;
+font-size: 24px;
+padding: 0;
+margin: 0;
+}
+.headline p{
+    color: #180f4a;
+    text-align: left;
+}
+.headline a{
+    display: inline-block;
+    background-color: #ff2978;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.headline a:hover{
+    background-color: antiquewhite;
+    color: #ff2978;
+    font-size: 22px;
+    transition: 0.4s;
+}
+
+.img-headline{
+flex: 40%;
+margin-right: 10%;
+/* border: 1px solid pink; */
+text-align: center;
+
+}
+
+
+section{
+    display: inline-block;
+    margin-top: 80px;
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: center;
+}
+
+section h2{
+    font-weight: bold;
+    color: #180f4a;
+    font-size: 40px;
+    width: 100%;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.servicos{
+    display: inline-block;
+    margin-top: 3%;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    padding: 20px;
+    border: 1px solid #ff2978;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.card:hover{
+    background-color: #ff2978;
+    color: white;
+    padding: 60px;
+}
+.card:hover img{
+    display:none;
+}
+.card:hover .card-text{
+    display: none;
+}
+.card:hover .texto-oculto{
+    display: block;
+}
+
+.texto-oculto{
+    display:none;
+}
+
+footer{
+    margin-top: 80px;
+    height: 300px;
+    text-align: center;
+    border: 4px solid #ff2978;
+ 
+    background-image: linear-gradient(180deg,#443c76,#140942,rgb(0, 0, 0));
+}
+
+.logo-rodape{
+    padding: 70px;
+    color: white;
+
+}
+
